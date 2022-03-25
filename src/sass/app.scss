@@ -239,7 +239,7 @@ main {
       width: 50%;
       &--container {
         margin-bottom: 50px;
-        border: 1px solid #D83838;
+        border: 1px solid #d83838;
         box-sizing: border-box;
         display: flex;
         padding: 2rem 1rem;
@@ -314,10 +314,10 @@ main {
         }
       }
       &--container2 {
-        border: 1px solid #D83838;
+        border: 1px solid #d83838;
         box-sizing: border-box;
         padding: 2rem 1rem;
-        background: #D83838;
+        background: #d83838;
         & h2 {
           margin-left: 1rem;
           font-style: normal;
@@ -325,7 +325,7 @@ main {
           font-size: 28px;
           line-height: 34px;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #ffffff;
           & img {
             margin-right: 0.3rem;
           }
@@ -342,7 +342,7 @@ main {
               font-weight: 700;
               font-size: 25px;
               line-height: 30px;
-              color: #FFFFFF;
+              color: #ffffff;
             }
             & a {
               background-color: #ffffff;
@@ -357,7 +357,7 @@ main {
                 text-decoration: none;
                 background-color: #a80505;
                 color: #ffffff;
-                border: 1px solid #FFFFFF;
+                border: 1px solid #ffffff;
               }
             }
           }
@@ -367,7 +367,7 @@ main {
               font-weight: 400;
               font-size: 18px;
               line-height: 22px;
-              color: #FFFFFF;
+              color: #ffffff;
               opacity: 0.7;
               max-width: 265px;
               margin: 1rem 0 0 0.5rem;
@@ -391,7 +391,7 @@ main {
       text-transform: uppercase;
       color: #000000;
       & span {
-        color: #D83838;
+        color: #d83838;
       }
     }
     &--container {
@@ -511,7 +511,7 @@ main {
         }
       }
       &-red {
-        background: #D83838;
+        background: #d83838;
         border: none !important;
         & p {
           color: #ffffff !important;
@@ -542,7 +542,7 @@ main {
       color: #000000;
       margin-bottom: 2rem;
       & span {
-        color: #D83838;
+        color: #d83838;
       }
     }
     &--container {
@@ -578,7 +578,7 @@ main {
           margin-top: 0.8rem;
         }
         & img {
-          max-width: 100%
+          max-width: 100%;
         }
       }
     }
@@ -633,6 +633,92 @@ main {
         width: 340px;
       }
     }
-    & button {}
+  }
+  & .budget {
+    display: flex;
+    padding: 3rem 6rem;
+    &--right {
+      & img {
+        max-width: 100%;
+      }
+    }
+    &--left {
+      & h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 41px;
+        text-transform: uppercase;
+        color: #303030;
+        max-width: 900px;
+        margin-top: 4rem;
+        & span {
+          color: #d83838;
+        }
+      }
+      &-container {
+        display: flex;
+        align-items: baseline;
+        margin: 3rem 0;
+        & div {
+          & p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26px;
+            color: #000000;
+            opacity: 0.8;
+            max-width: 400px;
+            margin-left: 1rem;
+          }
+        }
+      }
+      & p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        max-width: 610px;
+        & .bold {
+          font-weight: 700;
+        }
+        & .red {
+          color: #d83838;
+        }
+      }
+    }
+  }
+  & .time {
+    background-image: url(../img/bg6.png) !important;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 8rem 1rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    & h2 {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 27px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      max-width: 600px;
+      margin-bottom: 1rem;
+    }
+    & p {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      color: #FFFFFF;
+      opacity: 0.8;
+      max-width: 450px;
+      margin: 0;
+    }
   }
 }
