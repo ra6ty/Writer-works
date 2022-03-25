@@ -523,8 +523,116 @@ main {
       &-last {
         border-top: none !important;
         border-bottom: 1px solid #303030;
-        margin-bottom: 10rem;
       }
     }
+  }
+  & .consultation {
+    padding: 3rem 6rem;
+    background-image: url(../img/bg5-1.png) !important;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: no-cover;
+    & h2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 41px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 2rem;
+      & span {
+        color: #D83838;
+      }
+    }
+    &--container {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 2rem;
+      & div {
+        & p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 27px;
+          color: #000000;
+          opacity: 0.8;
+          max-width: 320px;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+    &--container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & div {
+        width: 32%;
+        text-align: center;
+        & p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 27px;
+          color: #000000;
+          margin-top: 0.8rem;
+        }
+        & img {
+          max-width: 100%
+        }
+      }
+    }
+    & form {
+      padding: 35px 0;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-evenly;
+      background: #313131;
+      & input {
+        height: 60px;
+      }
+      & button {
+        background-color: #d83838;
+        padding: 0.4rem 2rem;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+        height: 60px;
+        outline: none;
+        border: none;
+        &:hover {
+          text-decoration: none;
+          background-color: #a80505;
+        }
+      }
+      & input {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 1rem;
+        color: #6b6b6b;
+        &:focus {
+          border: none;
+          outline: none;
+          border-left: 5px solid #a80505;
+        }
+      }
+      & .name {
+        width: 235px;
+      }
+      & .tel {
+        width: 220px;
+      }
+      & .text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+        width: 340px;
+      }
+    }
+    & button {}
   }
 }
