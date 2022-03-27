@@ -1,30 +1,419 @@
-.container {
-  max-width: 1400px;
-}
-
-/**
+  /**
   Десктоп маленький
  */
-@media screen and (max-width: 1429px) {
-}
-
-/**
+  
+  @media screen and (max-width: 1429px) {
+    main .price .price_left--container-left div a {
+      padding: 0 1rem;
+    }
+    main .price .price_left--container2 .price_left--container22-left a {
+      padding: 0 1rem;
+    }
+    main .price .price_right {
+      margin-left: 6rem;
+    }
+    main .price .price_left {
+      width: 70%;
+    }
+  }
+  /**
   Планшет горизонтальный
  */
-@media screen and (max-width: 1279px) {
-  .container {
-    max-width: 100%;
+  
+  @media (max-width: 1300px) {
+    body main .consultation form {
+      & input {
+        width: 300px !important;
+        margin-top: 1rem;
+      }
+      & button {
+        width: 300px;
+        margin-top: 1rem;
+      }
+    }
+    main .price .price_right {
+      display: none;
+    }
+    main .price .price_left {
+      width: 100%;
+    }
+    main .whu_me--container-right .whu_me_container {
+      margin-left: 3rem;
+    }
+    .whu_me--container {
+      flex-wrap: wrap;
+      &-left {}
+    }
+    main .whu_me--container-right .whu_me_container--3 {
+      margin-left: 3rem;
+    }
+    main .forYou--container2 .forYou_container2 p {
+      font-size: 18px;
+    }
+    main .budget--left h2 {
+      font-size: 25px;
+      line-height: 32px;
+    }
+    main .budget--left-container {
+      margin: 1rem 0;
+    }
   }
-}
-
-/**
-  Планшет вертикальный
- */
-@media screen and (max-width: 1023px) {
-}
-
-/**
-  Мобильные устройства
- */
-@media screen and (max-width: 767px) {
-}
+  
+  @media screen and (max-width: 1023px) {
+    header .header_content h1 {
+      font-size: 43px;
+      line-height: 50px;
+    }
+    main .works h2 {
+      font-size: 26px;
+    }
+    main .helpForYou .help_forYou--container_left h3 {
+      font-size: 22px;
+      line-height: 36px;
+      margin-bottom: 1rem;
+      main .helpForYou .help_forYou {
+        justify-content: space-evenly;
+      }
+    }
+    main .helpForYou .help_forYou--container_left p {
+      line-height: 28px;
+      & span {
+        line-height: 28px;
+      }
+    }
+    main .budget {
+      flex-wrap: wrap;
+    }
+    main .helpForYou .help_forYou {
+      flex-direction: column;
+    }
+    header .header_content {
+      padding: 0 6rem;
+    }
+    header .header_content--container2 {
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      justify-content: center;
+      & div {
+        width: 40%;
+        margin: 1rem;
+      }
+    }
+    main .price {
+      padding: 0 4rem;
+    }
+    main .services .services_container {
+      padding: 0 3rem;
+    }
+    header .logo {
+      width: 15%;
+    }
+    main .price .price_left--container-right p {
+      font-size: 15px;
+    }
+    main .price .price_left--container2 .price_left--container22-left p {
+      font-size: 20px;
+    }
+    main .forYou--container2 .forYou_container2 p {
+      font-size: 15px;
+      line-height: 18px;
+      margin: 0 1rem;
+    }
+    main .helpForYou .help_forYou--container_left {
+      width: 80%;
+      margin: 0 auto;
+    }
+    main .helpForYou .help_forYou--container_right {
+      margin: 0 auto;
+      width: 70%;
+    }
+    main .helpForYou .help_forYou--container_right form {
+      align-items: center;
+    }
+    main .helpForYou .help_forYou--container_right form input {
+      width: 100%;
+    }
+    main .helpForYou .help_forYou--container_right form button {
+      width: 100%;
+    }
+    main .forYou--container2 .forYou_container2 div {
+      margin: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .whu_me_container {
+      flex-wrap: wrap;
+    }
+    header .logo {
+      width: 22%;
+    }
+    header .header_content h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    header .header_content--container {
+      flex-direction: column;
+    }
+    main .about {
+      flex-direction: column;
+      padding: 0 2rem;
+      & h2 {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+    header .navigation--tel {
+      display: none;
+    }
+    header nav {
+      display: none;
+    }
+    header .header_content {
+      padding: 0 2rem;
+      text-align: center;
+      &--container {
+        & a {
+          width: 80%;
+          margin: 0 auto;
+        }
+        & p {
+          margin: 1rem 0;
+        }
+      }
+    }
+    header .header_content--container2 {
+      & div {
+        width: 40%;
+        margin: 1rem 0.5rem !important;
+        & p {
+          font-size: 70px;
+          line-height: 20px;
+          & span {
+            font-size: 22px !important;
+            line-height: 30px !important;
+            margin: 0;
+          }
+        }
+        & h3 {
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          color: #000000;
+          opacity: 0.7;
+          margin: 0;
+        }
+      }
+    }
+    main .services .bg2 {
+      margin: 0 auto;
+    }
+    main .services .services_container {
+      padding: 0 2rem;
+      & h2 {
+        font-size: 31px;
+        line-height: 39px;
+      }
+    }
+    main .price .price_left--container {
+      flex-direction: column;
+      align-items: center;
+    }
+    main .price .price_left--container-left h2 {
+      margin-bottom: 2rem;
+      line-height: 22px;
+      font-size: 22px;
+    }
+    main .price .price_left--container-left div {
+      flex-direction: column;
+      align-items: normal;
+      & a {
+        width: 100%;
+        margin: 1rem 0;
+      }
+      & p {
+        margin-bottom: 1.4rem;
+        color: #D83838;
+      }
+    }
+    main .price .price_left--container-left .price_left--container-left--big {
+      margin: 0;
+    }
+    main .price .price_left--container2 .price_left--container22 {
+      flex-direction: column;
+    }
+    main .price .price_left--container2 .price_left--container22-left {
+      flex-direction: column;
+      align-items: normal;
+      & a {
+        width: 100%;
+        margin: 1rem 0;
+      }
+      & p {
+        margin: 0;
+      }
+    }
+    .whu_me--container {
+      width: 100%;
+    }
+    .whu_me--container-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    main .whu_me--container-right .whu_me_container {
+      width: 90%;
+      margin: 0 auto;
+      &--2 {
+        margin-left: 7rem;
+      }
+      &--3 {
+        margin: 0;
+      }
+      &--4 {
+        margin-left: 7rem;
+      }
+    }
+    main .consultation--container2 {
+      flex-wrap: wrap;
+    }
+    main .consultation--container2 div {
+      width: 80%;
+    }
+    main .budget {
+      padding: 0 4rem;
+      & h2 {
+        margin-top: 1rem;
+      }
+    }
+    main .whu_me h2 {
+      margin: 2rem 0 0rem 2rem;
+      font-size: 34px;
+      line-height: 33px;
+    }
+    main .price {
+      padding: 0 2rem;
+    }
+    main .works h2 {
+      margin: 1rem 2rem;
+      font-size: 20px;
+      line-height: 33px;
+    }
+    main .works--container2 div {
+      padding: 2rem;
+    }
+    main .works--container {
+      margin-bottom: 0;
+    }
+    main .consultation {
+      padding: 1rem 2rem;
+    }
+    main .consultation form {
+      margin-top: 0;
+      padding: 35px 15px;
+    }
+    main .time {
+      padding: 15px 1rem;
+      background-position: center;
+      display: block;
+      & h2 {
+        margin-top: 20px;
+        height: fit-content;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      & p {
+        font-size: 17px;
+        line-height: 23px;
+      }
+    }
+    main .forYou {
+      padding: 1rem 2rem;
+    }
+    main .forYou--container2 .forYou_container2 {
+      display: block;
+      & div {
+        margin: 2rem auto;
+        background-color: #ffffff;
+      }
+    }
+    main .helpForYou {
+      padding: 0 2rem;
+    }
+    main .budget {
+      padding: 0 2rem;
+    }
+    main .helpForYou .help_forYou--container_left {
+      width: 90%;
+      margin: 0 auto;
+    }
+    main .helpForYou .help_forYou--container_right {
+      width: 80%;
+      margin: 0 auto;
+      & form {
+        width: 100%;
+      }
+    }
+    main .helpForYou .help_forYou--container_right form input {
+      max-width: 100%;
+    }
+    main .helpForYou .help_forYou--container_right form button {
+      max-width: 100%;
+    }
+    main .works--container div img {
+      width: 30px;
+      margin-left: 2rem;
+    }
+    main .whu_me--container-right .whu_me_container div {
+      height: 165px;
+    }
+    main .services .services_container h2 {
+      font-size: 22px;
+      line-height: 30px;
+    }
+    main .price {
+      margin-top: 1rem;
+    }
+    footer .navigation {
+      display: none;
+    }
+    footer .navigationForTel {
+      display: block;
+    }
+    .line {
+      width: 30px;
+    }
+    main .whu_me--container-right .whu_me_container {
+      justify-content: center;
+    }
+    main .works--container div p {
+      font-size: 19px;
+      line-height: 21px;
+    }
+    main .budget--left-container div p {
+      font-size: 19px;
+      line-height: 21px;
+    }
+    main .forYou--container div p {
+      font-size: 19px;
+      line-height: 21px;
+    }
+    main .forYou--container2 .forYou_container2 p {
+      font-size: 16px;
+      line-height: 16px;
+    }
+    main .works--container2 div p {
+      font-size: 19px;
+      line-height: 21px;
+    }
+    header .navigation {
+      margin-top: 1rem;
+    }
+    .menu__btn {
+      display: block;
+    }
+    footer .navigationForTel p {
+      margin: 0 auto;
+      width: fit-content;
+    }
+  }

@@ -10,6 +10,39 @@
   <header>
     <div class="navigation">
       <img class="logo" src="./img/logo.svg" alt="#">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Послуги</a></li>
+          <li><a class="menu__item" href="#">Портфоліо</a></li>
+          <li><a class="menu__item" href="#">Чому саме ми</a></li>
+          <div class="navigationMenu">
+            <div class="navigationMenu--icon"><img src="./img/tel.svg" alt="#"></i>
+            </div>
+            <div class="navigationMenu--number">
+              <a href="tel:+380(96) 883 47 89">+380 (96) 883 47 89</a> <br>
+              <a href="tel:+380(63) 103 52 18">+380  (63)  103 52 18</a>
+              <div class="number--icon">
+                <a href="#"><img src="./img/telegram.svg" alt="#"></a>
+                <a href="#"><img src="./img/viber.svg" alt="#"></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </ul>
+      </div>
       <nav>
         <ul>
           <li><a href="#">Послуги</a></li>
@@ -29,12 +62,13 @@
           </div>
         </div>
       </div>
+
     </div>
     <div class="header_content">
       <h1>Допоможемо у розробці дисертації <span> "під ключ"</span></h1>
       <h2>Яка у вас спеціальність? Терміни? Які напрацювання є?</h2>
       <div class="header_content--container">
-        <a href="#" class="header_content--container-button">Проконсультуватися</a>
+        <a href="#" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" class="header_content--container-button">Проконсультуватися</a>
         <p>Прорахуємо вартість вашої роботи та сформуємо пропозицію</p>
       </div>
       <div class="header_content--container2">
@@ -195,7 +229,7 @@
       </h2>
       <div class="works--container">
         <div>
-          <img src="./img/line.svg" alt="#">
+          <img class="line" src="./img/line.svg" alt="#">
         </div>
         <div>
           <p>З зрозумілих причин назва тим трохи видозмінили. Анонімність понад усе</p>
@@ -249,7 +283,7 @@
       <h2>Покажіть нам <span>свою тему</span></h2>
       <div class="consultation--container">
         <div>
-          <img src="./img/line.svg" alt="#">
+          <img class="line" src="./img/line.svg" alt="#">
         </div>
         <div>
           <p>Зробимо все, щоб ви успішно здобули ступінь</p>
@@ -279,7 +313,7 @@
         <h2>зовсім не важливо, для якої цілі ви отримуєте <span>отримуєте наукове звання</span></h2>
         <div class="budget--left-container">
           <div>
-            <img src="./img/line.svg" alt="#">
+            <img class="line" src="./img/line.svg" alt="#">
           </div>
           <div>
             <p>Для просування у кар'єрі або для регалій у науковій діяльності</p>
@@ -301,7 +335,7 @@
       </span></h2>
       <div class="forYou--container">
         <div>
-          <img src="./img/line.svg" alt="#">
+          <img class="line" src="./img/line.svg" alt="#">
         </div>
         <div>
           <p>За нашою статистикою, в середньому ми заощаджуємо своїм клієнтам від 4 до 9 місяців життя</p>
@@ -351,8 +385,6 @@
         <img class="nav_logo--logoImg" src="./img/logo-white.svg" alt="#">
         <p>© 2021 Всі права захищені</p>
       </div>
-
-
       <nav>
         <ul>
           <li><a href="#">Послуги</a></li>
@@ -373,7 +405,57 @@
         </div>
       </div>
     </div>
+    <div class="navigationForTel">
+      <div>
+        <img class="nav_logo--logoImg" src="./img/logo-white.svg" alt="#">
+        <div class="navigation--tel">
+          <div class="navigation--tel-icon"><img src="./img/tel.svg" alt="#"></i>
+          </div>
+          <div class="navigation--tel-number">
+            <a href="tel:+380(96) 883 47 89">+380 (96) 883 47 89</a>
+            <a href="tel:+380(63) 103 52 18">+380  (63)  103 52 18</a>
+            <div class="number--icon">
+              <a href="#"><img src="./img/telegram.svg" alt="#"></a>
+              <a href="#"><img src="./img/viber.svg" alt="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Послуги</a></li>
+          <li><a href="#">Портфоліо</a></li>
+          <li><a href="#">Чому саме ми</a></li>
+        </ul>
+      </nav>
+      <p>© 2021 Всі права захищені</p>
+    </div>
   </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Замовити консультацію</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <h6 class="textInModal">Передзвонимо, проконсультуємо з усіх питань</h6>
+          <form class="formInModal" action="#" method="post">
+            <input class="name" placeholder="Ваше ім'я" type="text">
+            <input class="tel" type="tel" placeholder="+380 (99) 999-99-99" value="+380">
+            <button type="submit" data-dismiss="modal">Чекаю дзвінка</button>
+          </form>
+          <p class="InModal">Натискаючи кнопку, ви погоджуєтесь на обробку персональних даних</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <include src="src/templates/footer.html"></include>
 </body>
 
