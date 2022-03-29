@@ -42,7 +42,6 @@
     }
     .whu_me--container {
       flex-wrap: wrap;
-      &-left {}
     }
     main .whu_me--container-right .whu_me_container--3 {
       margin-left: 3rem;
@@ -174,7 +173,6 @@
       text-align: center;
       &--container {
         & a {
-          width: 80%;
           margin: 0 auto;
         }
         & p {
@@ -360,7 +358,7 @@
     main .helpForYou .help_forYou--container_right form button {
       max-width: 100%;
     }
-    main .works--container div img {
+    main .works--container div svg {
       width: 30px;
       margin-left: 2rem;
     }
@@ -415,5 +413,16 @@
     footer .navigationForTel p {
       margin: 0 auto;
       width: fit-content;
+    }
+    main .services .services_container .line {
+      width: 20px !important;
+      height: 20px !important;
+    }
+    main .price .price_left--container2 h2 {
+      margin: 0;
+      font-size: 25px;
+    }
+    .modal-title {
+      font-size: 39px;
     }
   }
