@@ -11,6 +11,18 @@ object {
   pointer-events: none;
 }
 
+.error {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ff0000;
+  text-align: center;
+  background-color: #c7cfc8;
+  line-height: 20px;
+}
+
 header {
   background-image: url(../img/bg1.png) !important;
   background-position: center right;
@@ -210,10 +222,7 @@ main {
       &-container {
         display: flex;
         align-items: baseline;
-        & svg {
-          width: 54.5px !important;
-          height: 12.5px !important;
-        }
+        width: fit-content;
         & p {
           font-weight: 400;
           font-size: 22px;
@@ -924,7 +933,8 @@ footer {
     justify-content: space-around;
     & .nav_logo {
       &--logoImg {
-        max-width: 100%;
+        width: 123px;
+        height: 58.36px;
         margin-top: 0.5rem;
       }
       & p {
@@ -1238,6 +1248,40 @@ footer {
 .line {
   width: 54.5px !important;
   height: 12.5px !important;
+  @media screen and (max-width: 767px) {
+    width: 30px !important;
+    height: 7px !important;
+    margin: 0 0.1rem 0 0.1rem !important;
+  }
+}
+
+.h3InModal {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #15B625;
+  margin: 1rem auto;
+}
+
+.h4InModal {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 1rem auto;
+  & span {
+    font-weight: 500;
+  }
+}
+
+.buttonCl {
+  display: none
 }
 
 @import '_responsive';

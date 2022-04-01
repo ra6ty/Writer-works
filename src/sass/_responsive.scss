@@ -103,6 +103,10 @@
     }
     main .services .services_container {
       padding: 0 3rem;
+      & h2 {
+        font-size: 23px;
+        line-height: 30px;
+      }
     }
     header .logo {
       width: 15%;
@@ -302,6 +306,9 @@
     }
     main .works--container {
       margin-bottom: 0;
+      & svg {
+        margin-left: 0.5rem !important;
+      }
     }
     main .consultation {
       padding: 1rem 2rem;
@@ -358,16 +365,13 @@
     main .helpForYou .help_forYou--container_right form button {
       max-width: 100%;
     }
-    main .works--container div svg {
-      width: 30px;
-      margin-left: 2rem;
-    }
     main .whu_me--container-right .whu_me_container div {
       height: 165px;
     }
     main .services .services_container h2 {
-      font-size: 22px;
-      line-height: 30px;
+      font-size: 16px;
+      line-height: 20px;
+      width: 80%;
     }
     main .price {
       margin-top: 1rem;
@@ -413,10 +417,6 @@
     footer .navigationForTel p {
       margin: 0 auto;
       width: fit-content;
-    }
-    main .services .services_container .line {
-      width: 20px !important;
-      height: 20px !important;
     }
     main .price .price_left--container2 h2 {
       margin: 0;

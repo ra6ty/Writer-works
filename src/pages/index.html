@@ -86,7 +86,7 @@
       <h1>Допоможемо у розробці дисертації <span> "під ключ"</span></h1>
       <h2>Яка у вас спеціальність? Терміни? Які напрацювання є?</h2>
       <div class="header_content--container">
-        <a href="#" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" class="header_content--container-button">Проконсультуватися</a>
+        <a href="#" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" class="header_content--container-button">Проконсультуватися</a>
         <p>Прорахуємо вартість вашої роботи та сформуємо пропозицію</p>
       </div>
       <div class="header_content--container2">
@@ -351,13 +351,22 @@
           <p>повний супровід</p>
         </div>
       </div>
-      <form action="#" method="post">
-        <input class="name" placeholder="Ваше ім'я" type="text">
-        <input class="tel" type="tel" placeholder="+380 (99) 999-99-99" value="+380">
+      <form id="form" action="#" method="post" name="form">
+        <input name="name" data-reg="^[a-zA-Z]+$" class="name" placeholder="Ваше ім'я" type="text">
+        <input name="phone" data-reg="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$" class="tel" id="tel" type="tel" placeholder="+380 (99) 999-99-99" value="+380">
         <input class="text" type="text" placeholder="Яка у вас спеціальність, терміни,які є напрацювання ">
-        <button type="submit">Проконсультуватися</button>
+        <button type="button" id="button" name="button">Проконсультуватися</button>
       </form>
+
+      <button type="button" id="submitForm" style="display: none;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        Launch demo modal
+      </button>
     </section>
+
+
+
+
+
     <section class="budget">
       <div class="budget--left">
         <h2>зовсім не важливо, для якої цілі ви отримуєте <span>отримуєте наукове звання</span></h2>
@@ -422,10 +431,10 @@
           <p>Залиште свій контакт і ми переконаємо вас,<br> що співпраця з нами - <span> одним з найправильніших ваших рішень за останні кілька років.</span></p>
         </div>
         <div class="help_forYou--container_right">
-          <form action="#" method="post">
-            <input class="name" placeholder="Ваше ім'я" type="text">
-            <input class="tel" type="tel" placeholder="+380 (99) 999-99-99" value="+380">
-            <button type="submit">Чекаю дзвінка</button>
+          <form id="form2" action="#" method="post" name="form">
+            <input name="name" class="name1" data-reg="^[a-zA-Z]+$" placeholder="Ваше ім'я" type="text">
+            <input name="tel" class="tel1" data-reg="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$" type="tel" placeholder="+380 (99) 999-99-99" value="+380">
+            <button type="button" name="button">Чекаю дзвінка</button>
           </form>
         </div>
       </div>
@@ -508,22 +517,40 @@
   </footer>
 
 
+
+
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title h3InModal" id="exampleModalLabel">Заявку одержали!</h3>
+          <button type="button" class="close buttonCl" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="h4InModal"><span>Чекайте на дзвінок менеджера протягом 15 хвилин</span><br> У робочий час з 10:00 до 19:00</h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal1 -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Замовити консультацію</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close" id="closeModal" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
         </div>
         <div class="modal-body">
           <h6 class="textInModal">Передзвонимо, проконсультуємо з усіх питань</h6>
-          <form class="formInModal" action="#" method="post">
-            <input class="name" placeholder="Ваше ім'я" type="text">
-            <input class="tel" type="tel" placeholder="+380 (99) 999-99-99" value="+380">
-            <button type="submit" data-dismiss="modal">Чекаю дзвінка</button>
+          <form id="form3" class="formInModal" action="#" method="post" name="form">
+            <input name="name" class="name2" data-reg="^[a-zA-Z]+$" placeholder="Ваше ім'я" type="text">
+            <input name="tel" class="tel2" type="tel" data-reg="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$" placeholder="+380 (99) 999-99-99" value="+380">
+            <button type="button" name="button">Чекаю дзвінка</button>
           </form>
           <p class="InModal">Натискаючи кнопку, ви погоджуєтесь на обробку персональних даних</p>
         </div>
@@ -531,6 +558,8 @@
       </div>
     </div>
   </div>
+
+
   <include src="src/templates/footer.html"></include>
 </body>
 
