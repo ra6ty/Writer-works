@@ -2,9 +2,14 @@
 @import '_variables';
 @import '_desktop.scss';
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css');
-body {
+header {
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 0 auto !important;
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 auto !important;
 }
 
 object {
@@ -27,7 +32,6 @@ header {
   background-image: url(../img/bg1.png) !important;
   background-position: center right;
   background-repeat: no-repeat;
-  background-size: no-cover;
   font-family: 'Montserrat';
   & .logo {
     width: 10%;
@@ -57,9 +61,11 @@ header {
         line-height: 20px;
         color: #000000;
         margin-left: 2rem;
+        border: none;
         &:hover {
           color: #b93131;
           text-decoration: none;
+          border: none;
         }
       }
     }
@@ -88,6 +94,14 @@ header {
           &:hover {
             text-decoration: none;
             color: #d83838;
+          }
+          &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+          }
+          &:active {
+            color: #b93131;
           }
         }
         & .number--icon {
@@ -626,11 +640,15 @@ main {
       padding: 35px 0;
       margin-top: 3rem;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-wrap: wrap;
       background: #313131;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
       & input {
         height: 60px;
+        margin-right: 1rem;
       }
       & button {
         background-color: #d83838;
@@ -642,6 +660,7 @@ main {
         height: 60px;
         outline: none;
         border: none;
+        margin-right: 1rem;
         &:hover {
           text-decoration: none;
           background-color: #a80505;
@@ -890,6 +909,9 @@ main {
           display: flex;
           flex-direction: column;
           align-items: stretch;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
           & button {
             background-color: #d83838;
             padding: 0.4rem 2rem;
@@ -936,6 +958,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    max-width: 1600px;
+    margin: 0 auto;
     & .nav_logo {
       &--logoImg {
         width: 123px;
@@ -1010,6 +1034,8 @@ footer {
   .navigationForTel {
     display: none;
     padding-bottom: 1rem;
+    margin: 0 auto;
+    max-width: 1600px;
     & div {
       display: flex;
       justify-content: space-around;
@@ -1219,6 +1245,15 @@ footer {
       text-decoration: none;
       background-color: #a80505;
     }
+    &:focus {
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    &:active {
+      background-color: #a80505 !important;
+      border: none;
+    }
   }
   & input {
     font-style: normal;
@@ -1287,6 +1322,39 @@ footer {
 
 .buttonCl {
   display: none
+}
+
+.btn-primary {
+  &:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  &:active {
+    background-color: #a80505 !important;
+    border: none;
+  }
+}
+
+#exampleModalLabel3 {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #b61515;
+  margin: 1rem auto;
+}
+
+#exampleModalLText {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  color: #000000;
+  margin: 0.5rem auto;
 }
 
 @import '_responsive';

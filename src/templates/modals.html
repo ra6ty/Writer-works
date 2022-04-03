@@ -1,0 +1,56 @@
+<!-- Modal Submit -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title h3InModal" id="exampleModalLabel2">Заявку одержали!</h3>
+
+      </div>
+      <div class="modal-body">
+        <h4 class="h4InModal"><span>Чекайте на дзвінок менеджера протягом 15 хвилин</span><br> У робочий час з 10:00 до 19:00</h4>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal Form -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Замовити консультацію</h5>
+        <button type="button" class="close" id="closeModal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6 class="textInModal">Передзвонимо, проконсультуємо з усіх питань</h6>
+        <form id="form3" class="formInModal" action="#" method="post" name="form">
+          <input name="name" class="name2" data-reg="^[a-zA-Z]+$" placeholder="Ваше ім'я" type="text">
+          <input name="tel" class="tel2" type="tel" data-reg="^(\+)?((\d{3,8}) ?\d|\d)(([ -]?\d)|( ?(\d{3,8}) ?)){5,12}\d$" placeholder="+380 (99) 999-99-99" value="+380">
+          <button type="button" name="button" onmouseout="this.form.reset();">Чекаю дзвінка</button>
+        </form>
+        <p class="InModal">Натискаючи кнопку, ви погоджуєтесь на обробку персональних даних</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal Error -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Виникла помилка</h5>
+      </div>
+      <div class="modal-body" id="exampleModalLText">
+        <p>Помилка з підключенням до інтернуту. <br> Будь-ласка повторіть спробу пізніше</p>
+      </div>
+
+    </div>
+  </div>
+</div>
